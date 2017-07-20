@@ -26,5 +26,8 @@ sudo docker images
 
 **5. 启动**
 sudo docker run -it ca38f2eac26b /bin/bash
+带宿主机目录启动
+sudo docker run -it -v ~/download:/home/hello 镜像 /bin/bash
 
-
+**6. 编译镜像**
+sudo docker build -t ubuntu:myaosp . 
