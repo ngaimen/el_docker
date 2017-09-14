@@ -26,10 +26,12 @@ sudo docker images
 
 **5. 启动**       
 sudo docker run -it ca38f2eac26b /bin/bash        
+
 带宿主机目录启动         
-sudo docker run -it -v [宿主机目录](eg:~/download):[容器机目录](eg:/home/hello) 镜像 /bin/bash
+sudo docker run -it -v [宿主机目录](eg:~/download):[容器机目录](eg:/home/hello) 镜像 /bin/bash             
+
 退出时自动删除容器                
-sudo docker run --rm -it -v [宿主机目录](eg:~/download):[容器机目录](eg:/home/hello) 镜像 /bin/bash
+sudo docker run --rm -it -v [宿主机目录](eg:~/download):[容器机目录](eg:/home/hello) 镜像 /bin/bash        
 
 **6. 编译镜像**        
 sudo docker build -t ubuntu:myaosp . 
