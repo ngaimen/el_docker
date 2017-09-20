@@ -35,3 +35,7 @@ sudo docker run --rm -it -v [宿主机目录](eg:~/download):[容器机目录](e
 
 **6. 编译镜像**        
 sudo docker build -t ubuntu:myaosp . 
+
+**7. ssh sign in**
+username root
+password 123456
